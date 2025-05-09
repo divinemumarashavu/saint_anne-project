@@ -1,0 +1,175 @@
+/* General Body Styles */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #1c1e21;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #1877f2;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-top: 10px;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #b0d1f6;
+}
+
+/* Main Content Area */
+main {
+    width: 80%;
+    max-width: 1100px;
+    margin: 30px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Section Title */
+h2 {
+    font-size: 22px;
+    color: #1877f2;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+form label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input[type="date"],
+input[type="number"],
+button {
+    padding: 8px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+input[type="date"]:focus,
+input[type="number"]:focus,
+button:focus {
+    outline: none;
+    border-color: #1877f2;
+}
+
+/* Button Styles */
+button {
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #165eab;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f5f6f7;
+    color: #1877f2;
+    font-weight: bold;
+}
+
+td {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Total Info Paragraphs */
+p {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+b {
+    color: #1877f2;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    main {
+        width: 95%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin-bottom: 10px;
+    }
+
+    form {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    form label {
+        margin-bottom: 5px;
+    }
+
+    table th,
+    table td {
+        font-size: 14px;
+    }
+}
